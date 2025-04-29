@@ -11,7 +11,6 @@ let miti ='yyyy-mm-dd' ;
 date.innerHTML = miti;
 date.style.fontSize = "50px";
 date.style.textAlign = "center";
-// date.style.marginTop = "20%";
 date.style.fontSize = "30px";
 document.body.appendChild(clock);
 document.body.appendChild(date);
