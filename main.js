@@ -1,0 +1,27 @@
+
+let time= "00:00:00";
+let clock = document.createElement("div");  
+let date = document.createElement("div");
+clock.innerHTML = time;
+clock.style.fontSize = "50px";
+clock.style.textAlign = "center";
+clock.style.marginTop = "20%";
+
+let miti ='yyyy-mm-dd' ;
+date.innerHTML = miti;
+date.style.fontSize = "50px";
+date.style.textAlign = "center";
+// date.style.marginTop = "20%";
+date.style.fontSize = "30px";
+document.body.appendChild(clock);
+document.body.appendChild(date);
+
+
+
+setInterval(() => {
+const currentDate = new Date();
+const time = currentDate.toLocaleTimeString();
+clock.innerHTML = time;
+const miti = currentDate.getFullYear()+"-"+ (currentDate.getMonth()<10 ? "0" : " ")+ currentDate.getMonth()+"-" +(currentDate.getDay()<10? "0" : "") + currentDate.getDay();
+date.innerHTML = miti;
+}, 1000);
