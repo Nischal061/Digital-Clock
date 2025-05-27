@@ -21,6 +21,8 @@ setInterval(() => {
 const currentDate = new Date();
 const time = currentDate.toLocaleTimeString();
 clock.innerHTML = time;
-const miti = currentDate.getFullYear()+"-"+ (currentDate.getMonth()<10 ? "0" : " ")+ currentDate.getMonth()+"-" +(currentDate.getDay()<10? "0" : "") + currentDate.getDay();
+const miti = currentDate.toDateString();
+
+
 date.innerHTML = miti;
 }, 1000);
