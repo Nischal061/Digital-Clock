@@ -7,7 +7,7 @@ clock.style.fontSize = "50px";
 clock.style.textAlign = "center";
 clock.style.marginTop = "20%";
 
-let miti ='yyyy-mm-dd' ;
+let miti ='mm-dd-yyyy' ;
 date.innerHTML = miti;
 date.style.fontSize = "50px";
 date.style.textAlign = "center";
